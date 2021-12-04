@@ -1,15 +1,23 @@
-const express = require('express');
+const express = require('express')
 const app = express();
-const bodyParser = require("body-parser")
+const http = require('http').createServer(app);
 
-const hostname = 'localhost';
-const port = 3300;
 
+const io = require('socket.io')(http, {
+    cors: {
+        origin: "http://localhost:3000",
+        methods: ["GET", "POST"]
+    }
+}
+);
+
+io.on("connection", socket => {
+    // either with send()
+    socket.send("Hello!");
+  });
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
-})
+    res.send('Hello World!')
+  })
 
-app.listen(port, hostname, () => {
-    console.log(`server running at http://${hostname}:${port}/`)
-})
+http.listen(3300)
