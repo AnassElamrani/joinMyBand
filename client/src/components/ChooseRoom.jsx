@@ -7,7 +7,7 @@ import {
 } from "../styled/StyledChooseRoom.styled";
 import { useState, useEffect } from "react";
 
-import {ChatRoom} from "./ChatRoom";
+import { ChatRoom } from "./ChatRoom";
 
 const rooms = [
   { name: "Guitar", logo: guitar },
@@ -19,8 +19,8 @@ export const ChooseRoom = () => {
   const [selectedRoom, setSelectedRoom] = useState();
 
   const resetRoom = () => {
-      setSelectedRoom(null);
-  }
+    setSelectedRoom(null);
+  };
 
   return (
     <>

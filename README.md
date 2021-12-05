@@ -1,1 +1,5 @@
-A tiny web application to search for musicians that share the same interest with you , chat with them , and why not making collaboration with each other
+commands: 
+
+ - ./client : npm install
+ - ./backend : npm install
+ - ../ : npm run start-app

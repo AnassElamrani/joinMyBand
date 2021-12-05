@@ -27,7 +27,7 @@ max-height: 800px;
 export const WriteTextDiv = styled.div`
 display: flex;
 flex-direction: column;
-overflowY : scroll;
+overflow-y : scroll;
 height: 100%;
 `
 

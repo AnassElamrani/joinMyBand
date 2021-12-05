@@ -55,7 +55,6 @@ export const Welcome = () => {
             <input ref={inputRef}></input>
             {usernameErr ? <UsernameError>{usernameErr}</UsernameError> : ""}
             <EnterButton
-
               onClick={() => {
                 submitUsername(inputRef.current.value);
               }}
