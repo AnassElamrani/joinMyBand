@@ -8,7 +8,7 @@ export const Welcome = ()  => {
     const [usernameErr, setUserNameErr] = useState();
     const [cookies, setCookie, removeCookie] = useCookies(['username']);
     const [loggedin, setLoggedin] = useState(false);
-    const inputRef = useRef()
+    const inputRef = useRef();
     
     useEffect(() => {
         cookies.username ? setLoggedin(true) : setLoggedin(false);
