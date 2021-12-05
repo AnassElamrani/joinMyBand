@@ -38,3 +38,11 @@ position: absolute;
 top: 10px;
 left: 10px;
 `
+
+export const EnterButton = styled.button `
+color: purple;
+border: none;
+padding: 5px 10px;
+border-radius: 5px;
+border: 1px solid gray;
+`

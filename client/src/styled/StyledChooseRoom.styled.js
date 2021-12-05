@@ -29,7 +29,7 @@ justify-content: center;
 }
 &:hover {
     & > h2 {
-        color: purple;
+        color: green;
         cursor: default;
     }
 }
